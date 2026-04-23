@@ -5,17 +5,14 @@ import { cn } from "@/lib/utils";
 import toast from "react-hot-toast";
 export const ContactSection = () => {
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        // Handle form submission logic here
-
-        setTimeout(() => {
-            toast({
-                
-            }
-                "Message sent successfully!");
-        }, 500);
-    }
+   const handleSubmit = (e) => {
+      e.preventDefault();
+      
+      // Simplified toast notification
+      setTimeout(() => {
+        toast("Message sent successfully!"); 
+      }, 500);
+    };
 
     return (
         <section id="contact" className="py-24 px-4 relative bg-secondary/30">
